@@ -26,20 +26,24 @@ public class Titik{
     double getOrdinat(){
         return ordinat;
     }
-
+    
+    //mengeset nilai absis dengan nilai baru x
     void setAbsis(double x){
         absis = x;
     }
 
+    //mengeset nilai ordinat dengan nilai baru x
     void setOrdinat(double y){
         ordinat = y;
     }
 
+    //menggeser nilai absis dan rdinat titik masing masing sejauh x dan y;
     void geser(double x, double y){
         absis = absis + x;
         ordinat = ordinat + x;
     }
 
+    //mencetak kordinat titik
     void printTitik(){
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
