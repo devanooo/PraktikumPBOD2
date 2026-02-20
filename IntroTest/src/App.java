@@ -95,7 +95,7 @@ public class App {
             idx++;
         } while (idx < nilaiUjian.length);
 
-        //test
+        //test jembnot
         
         System.out.println("Jumlah Mata Kuliah yang Lulus: " + jumlahLulus + " dari " + nilaiUjian.length);
     }
