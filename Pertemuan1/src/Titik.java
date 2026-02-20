@@ -27,6 +27,22 @@ public class Titik{
         return ordinat;
     }
 
+    void setAbsis(double x){
+        absis = x;
+    }
 
+    void setOrdinat(double y){
+        ordinat = y;
+    }
+
+    void geser(double x, double y){
+        absis = absis + x;
+        ordinat = ordinat + x;
+    }
+
+    void printTitik(){
+        System.out.println("Titik (" + absis + "," + ordinat + ")");
+    }
 }
+
 
