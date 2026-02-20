@@ -95,6 +95,8 @@ public class App {
             idx++;
         } while (idx < nilaiUjian.length);
         
+        //jembot
+        
         System.out.println("Jumlah Mata Kuliah yang Lulus: " + jumlahLulus + " dari " + nilaiUjian.length);
     }
 }
