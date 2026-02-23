@@ -45,7 +45,7 @@ public class Titik{
 
     //mencetak kordinat titik
     void printTitik(){
-        System.out.println("Titik (" + absis + "," + ordinat + ")");
+        System.out.println("Titik (" + absis + "," + ordinat + ")kontol");
     }
 }
 
