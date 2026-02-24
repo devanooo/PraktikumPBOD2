@@ -25,5 +25,6 @@ public class Mtitik{
         T1.refleksiY();
         
         
+        
     }
 } 
