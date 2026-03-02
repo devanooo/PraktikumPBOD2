@@ -23,8 +23,7 @@ public class Mtitik{
 
         T1.refleksiX();
         T1.refleksiY();
-        
-        
+
         
     }
 } 
