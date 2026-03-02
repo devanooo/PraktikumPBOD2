@@ -28,33 +28,33 @@ public class Titik{
         return counterTitik;
     }
     //mengembalikan nilai absis
-    double getAbsis(){
+    public double getAbsis(){
         return absis;
     }
 
     //mengembalikan nilai ordinat
-    double getOrdinat(){
+    public double getOrdinat(){
         return ordinat;
     }
     
     //mengeset nilai absis dengan nilai baru x
-    void setAbsis(double x){
+    public void setAbsis(double x){
         absis = x;
     }
 
     //mengeset nilai ordinat dengan nilai baru x
-    void setOrdinat(double y){
+    public void setOrdinat(double y){
         ordinat = y;
     }
     
     //menggeser nilai absis dan rdinat titik masing masing sejauh x dan y;
-    void geser(double x, double y){
+    public void geser(double x, double y){
         absis = absis + x;
         ordinat = ordinat + y;
     }
 
     //getkuadran
-    int getKuadran(){
+    public int getKuadran(){
         if (absis > 0 && ordinat > 0){
             return 1;
         }
@@ -69,35 +69,35 @@ public class Titik{
     }
 
     //getJarakPusat
-    double getJarakPusat(){
+    public double getJarakPusat(){
         return Math.sqrt((absis * absis) + (ordinat * ordinat));
     }
 
     //getjarak(T: titik)
-    double getJarak(Titik T){
+    public double getJarak(Titik T){
         double selisihx = (absis - T.absis);
         double selisihy = (ordinat - T.ordinat);
 
         return Math.sqrt((selisihx * selisihx) + (selisihy * selisihy));
     }
     //refleksiX
-    void refleksiX(){
+    public void refleksiX(){
         ordinat = -ordinat;
     }
     //refleksi Y
-    void refleksiY(){
+    public void refleksiY(){
         absis = -absis;
     }
 
-    Titik getRefleksiX(){
+    public Titik getRefleksiX(){
         return new Titik(this.absis,-this.ordinat);
     }
-    Titik getRefleksiY(){
+    public Titik getRefleksiY(){
         return new Titik(-this.absis, this.ordinat);
     }
 
     //mencetak kordinat titik
-    void printTitik(){
+    public void printTitik(){
         System.out.println("Titik (" + absis + "," + ordinat + ")");
     }
 
