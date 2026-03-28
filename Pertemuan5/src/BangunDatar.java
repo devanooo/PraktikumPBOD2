@@ -27,7 +27,7 @@ public abstract class BangunDatar {
     }
 
     public String getWarna() {
-        return this.warna;
+        return this.warna; 
     }
 
     public void setWarna(String warna) {
