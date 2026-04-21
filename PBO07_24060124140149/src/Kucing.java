@@ -1,13 +1,11 @@
-public class Anjing extends Anabul {
-    
-    Anjing(){
-        super();
+public class Kucing extends Anabul {
+    Kucing(){
+
     }
 
-    Anjing(String Nama){
+    Kucing(String Nama){
         super(Nama);
     }
-
     @Override
     public String Gerak(){
         return "Melata";
@@ -15,7 +13,7 @@ public class Anjing extends Anabul {
 
     @Override
     public String Bersuara(){
-        return "guk-guk";
+        return "Meong";
     }
 
     @Override
@@ -24,5 +22,4 @@ public class Anjing extends Anabul {
         System.out.println("Gerak : " + this.Gerak());
         System.out.println("Bersuara : " + this.Bersuara());
     }
-
 }

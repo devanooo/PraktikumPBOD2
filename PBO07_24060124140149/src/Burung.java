@@ -1,21 +1,20 @@
-public class Anjing extends Anabul {
-    
-    Anjing(){
+public class Burung extends Anabul{
+    Burung(){
         super();
     }
 
-    Anjing(String Nama){
+    Burung(String Nama){
         super(Nama);
     }
 
     @Override
     public String Gerak(){
-        return "Melata";
+        return "Terbang";
     }
 
     @Override
     public String Bersuara(){
-        return "guk-guk";
+        return "cuit";
     }
 
     @Override

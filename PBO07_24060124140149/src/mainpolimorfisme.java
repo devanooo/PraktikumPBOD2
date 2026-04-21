@@ -41,15 +41,24 @@ public class mainpolimorfisme {
         System.out.println("==setelah setprogramstudi==");
         M1.setProgramStudi(M2);
         System.out.println("==M1==");
+        M1.printInfo();
         
-
+        
+        System.out.println("==Anabul==");
+        System.out.println("==Anjing==");
         Anjing A1 = new Anjing("Blacky");
+        
+        A1.printInfo();
+        
+        System.out.println("==Kucing==");
+        Kucing K1 = new Kucing("Meng");
 
-        String suaraAnjing = A1.Bersuara();
-        String gerakAnjing = A1.Gerak();
+        K1.printInfo();
 
-        System.out.println("Suara Anjing: " + suaraAnjing);
-        System.out.println("Gerak Anjing : " + gerakAnjing);
+        System.out.println("==Burung==");
+        Burung B1 = new Burung("Jonathan");
+
+        B1.printInfo();
 
 
         

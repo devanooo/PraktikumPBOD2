@@ -16,4 +16,8 @@ public abstract class Anabul {
     public void setNama(String nama) {
         Nama = nama;
     }
+
+    public void printInfo(){
+        System.out.println("Nama : " + this.Nama);
+    }
 }
