@@ -1,7 +1,7 @@
 public class Mahasiswa {
-    String NIM;
-    String Nama;
-    String Programstudi;
+    public String NIM;
+    public String Nama;
+    public String Programstudi;
 
     Mahasiswa(){
         NIM = "-999";

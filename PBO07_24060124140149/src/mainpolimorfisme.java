@@ -43,6 +43,15 @@ public class mainpolimorfisme {
         System.out.println("==M1==");
         
 
+        Anjing A1 = new Anjing("Blacky");
+
+        String suaraAnjing = A1.Bersuara();
+        String gerakAnjing = A1.Gerak();
+
+        System.out.println("Suara Anjing: " + suaraAnjing);
+        System.out.println("Gerak Anjing : " + gerakAnjing);
+
+
         
 
     }
