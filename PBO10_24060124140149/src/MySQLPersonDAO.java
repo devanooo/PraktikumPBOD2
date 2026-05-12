@@ -1,0 +1,18 @@
+import java.sql.*;
+
+public class MySQLPersonDAO implements PersonDAO{
+    public void savePerson(Person person) throws Exception{
+        String name = person.getName();
+        //Membuat koneksi, nama db, user, password
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/pbo","root","");
+
+        //kerjakan mysql query
+        String query = "INSERT INTO person(name) VALUES('"+name+"')";
+        System.out.println(query);
+        Statement s = con.createStatement();
+        s.executeUpdate(query);
+        //tutup koneksi database
+        con.close();
+    }
+}
