@@ -1,3 +1,8 @@
+/* 
+    Nama    : Devano Trestanto
+    NIM     : 24060124140149
+*/
+
 public abstract class Anabul {
     public String Nama;
 

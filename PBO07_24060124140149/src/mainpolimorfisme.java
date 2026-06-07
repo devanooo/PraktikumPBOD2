@@ -51,7 +51,7 @@ public class mainpolimorfisme {
         A1.printInfo();
         
         System.out.println("==Kucing==");
-        Kucing K1 = new Kucing("Meng");
+        Kucing K1 = new Kucing("yanto");
 
         K1.printInfo();
 
@@ -59,8 +59,6 @@ public class mainpolimorfisme {
         Burung B1 = new Burung("Jonathan");
 
         B1.printInfo();
-
-
         
 
     }

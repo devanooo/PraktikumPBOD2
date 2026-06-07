@@ -14,7 +14,7 @@ public class Pegawai {
     
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern(
     "d MMMM yyyy", new Locale("id", "ID"));
-
+        
     public Pegawai(String NIP, String Nama, String TTL, String TMT, int GajiPokok ){
         this.NIP = NIP;
         this.Nama = Nama;

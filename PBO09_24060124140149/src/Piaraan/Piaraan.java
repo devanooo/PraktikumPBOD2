@@ -1,0 +1,75 @@
+package Piaraan;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+
+public class Piaraan {
+    private int nbelm;
+    private Queue<Anabul> Lanabul;
+
+    public Piaraan(){
+        this.nbelm = 0;
+        this.Lanabul = new LinkedList<>();
+    }
+
+    public int getNbelm() {
+        return nbelm;
+    }
+
+    public void showAnabul(){
+        for(Anabul a : Lanabul){
+            System.out.println(a.getNama());
+        }
+    }
+
+    public Queue<Anabul> getLanabul() {
+        return Lanabul;
+    }
+    
+    public void enqueueAnabul(Anabul anabul){
+        this.Lanabul.add(anabul);
+        this.nbelm++;
+    }
+
+    public boolean isMember(Anabul anabul){
+        return this.Lanabul.contains(anabul);
+    }
+
+    public Anabul getAnabul(){
+        return this.Lanabul.peek();
+    }
+
+    public Anabul dequeueAnabul() {
+        this.nbelm--;
+        return this.Lanabul.poll();
+    }
+
+    public int countKucing(){
+        int itung = 0;
+        for(Anabul a : Lanabul){
+            if(a instanceof Kucing){
+                itung++;
+            }
+        }
+        return itung;
+    }
+
+    public double bobotKucing(){
+        double bobot = 0.0;
+        for(Anabul a : Lanabul){
+            if(a instanceof Kucing){
+                bobot += ((Kucing) a).getBobot();
+            }
+        }
+
+        return bobot;
+    }
+
+    public void showJenisAnabul(){
+        for(Anabul a : Lanabul){
+            System.out.println(a.getNama() +", "+a.getClass().getName());
+        }
+    }
+    
+}
